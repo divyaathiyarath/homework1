@@ -1,7 +1,7 @@
 const Express=require('express');
 var app=new Express();
 app.get('/',(req,res)=>{
-    res.send("Welcome");
+    res.render('index.ejs',{title:"Home page"});
 });
 app.get('/index',(req,res)=>{
      res.render('index.ejs',{title:"Home page"});
