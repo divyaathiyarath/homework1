@@ -12,6 +12,6 @@ app.get('/index/login',(req,res)=>{
 app.get('/registration',(req,res)=>{
     res.render('registration.ejs',{title:"Registration page"});
 });
-app.listen(3000,()=>{
+app.listen(process.env.PORT || 3000,()=>{
     console.log("Server running on http://localhost:3000");
 });
